@@ -1,0 +1,72 @@
+{
+  "id": "0505a3df-e915-4ef6-b628-138faa5f5343",
+  "version": "2.0",
+  "name": "L1",
+  "url": "https://www.lunduniversity.lu.se",
+  "tests": [{
+    "id": "602b7a8d-1805-4091-baf0-3e979a246148",
+    "name": "1",
+    "commands": [{
+      "id": "78e54bc6-618f-40f0-ad90-cee52f0d290d",
+      "comment": "",
+      "command": "open",
+      "target": "/lubas/courses-programmes/*/program/1/undefined",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38cc6b10-a130-45dd-8fdd-b782d20db8bd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "921x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61ea46a6-963a-46a7-b0d8-cc38495db433",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=International Human Rights Law - Master Programme",
+      "targets": [
+        ["linkText=International Human Rights Law - Master Programme", "linkText"],
+        ["css=.hit:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'International Human Rights Law - Master Programme')]", "xpath:link"],
+        ["xpath=//div[@id='solrtab-program-content']/div/div[2]/div/ul/li/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.lunduniversity.lu.se/lubas/i-uoh-lu-JAMRÄ')]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'International Human Rights Law - Master Programme')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a37f97fe-b72e-4921-abb4-827a8f8b159d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-uppercase > .font-weight-semi-bold",
+      "targets": [
+        ["css=.text-uppercase > .font-weight-semi-bold", "css:finder"],
+        ["xpath=//div[@id='block-lu-theme-content']/main/div/div/div/div/div/div/p/span", "xpath:idRelative"],
+        ["xpath=//p/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bace7e74-05d9-4d2f-91f0-87f3a0098d4a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.text-uppercase > .font-weight-semi-bold",
+      "targets": [
+        ["css=.text-uppercase > .font-weight-semi-bold", "css:finder"],
+        ["xpath=//div[@id='block-lu-theme-content']/main/div/div/div/div/div/div/p/span", "xpath:idRelative"],
+        ["xpath=//p/span", "xpath:position"]
+      ],
+      "value": "MASTER'S PROGRAMME · 2 YEARS · 120 CREDITS"
+    }]
+  }],
+  "suites": [{
+    "id": "e617dbcf-fa62-4873-8da6-040bdef6a381",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": true,
+    "timeout": 300,
+    "tests": ["602b7a8d-1805-4091-baf0-3e979a246148"]
+  }],
+  "urls": ["https://www.lunduniversity.lu.se/"],
+  "plugins": []
+}
