@@ -1,0 +1,127 @@
+{
+  "id": "4380f1f7-bbf2-47fb-a645-5279409288b9",
+  "version": "2.0",
+  "name": "Tests22.02",
+  "url": "https://www.lu.se",
+  "tests": [{
+    "id": "0d87dd43-5262-4619-82d0-ffd10fcd0fa9",
+    "name": "Psykologprogrammet",
+    "commands": [{
+      "id": "b7e1170e-300d-41d7-a841-2278bb0272f7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ee9e758-2610-4124-84f9-87d02b1c0fd9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "921x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "531afdb1-2d99-4d89-803a-5ed95c9a2ef5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-100",
+      "targets": [
+        ["css=.mw-100", "css:finder"],
+        ["xpath=//img[@alt='Lunds universitets logotyp, länk till startsidan.']", "xpath:img"],
+        ["xpath=//div[@id='block-luheaderblock']/header/div[2]/div/div/div/div/div/h1/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2bfd6c9-97f8-4446-b19f-95eb91a91a6d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Program och kurser",
+      "targets": [
+        ["linkText=Program och kurser", "linkText"],
+        ["css=.linklist--buttons > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Program och kurser')]", "xpath:link"],
+        ["xpath=//div[@id='block-lu-theme-content']/main/div[5]/div/div[2]/div/div/div/div/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.lu.se/lubas/courses-programmes/*/courseandprogram/1/undefined')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b22cb174-f439-499e-a9be-bd2b4668eca1",
+      "comment": "",
+      "command": "click",
+      "target": "id=solr-search-form",
+      "targets": [
+        ["id=solr-search-form", "id"],
+        ["css=#solr-search-form", "css:finder"],
+        ["xpath=//input[@id='solr-search-form']", "xpath:attributes"],
+        ["xpath=//form[@id='lu-search-form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d316ca7b-d317-4fd0-9791-bdb5474d9bab",
+      "comment": "",
+      "command": "type",
+      "target": "id=solr-search-form",
+      "targets": [
+        ["id=solr-search-form", "id"],
+        ["css=#solr-search-form", "css:finder"],
+        ["xpath=//input[@id='solr-search-form']", "xpath:attributes"],
+        ["xpath=//form[@id='lu-search-form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "psykolog"
+    }, {
+      "id": "28182909-ebd0-44d5-990f-5307fe6812a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=edit-submit",
+      "targets": [
+        ["id=edit-submit", "id"],
+        ["css=#edit-submit", "css:finder"],
+        ["xpath=//input[@id='edit-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='lu-search-form']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91ca5d09-c937-45ad-abf3-39d9201c548d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Psykologprogrammet",
+      "targets": [
+        ["linkText=Psykologprogrammet", "linkText"],
+        ["css=.mt-0 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Psykologprogrammet')]", "xpath:link"],
+        ["xpath=//div[@id='solrtab-courseandprogram-content']/div/div[2]/div/ul/li/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.lu.se/lubas/i-uoh-lu-SAPSP')]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Psykologprogrammet')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7287e029-16cd-4695-9fdc-0337adeb7d0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-0 > .font-weight-semi-bold",
+      "targets": [
+        ["css=.mt-0 > .font-weight-semi-bold", "css:finder"],
+        ["xpath=//div[@id='block-lu-theme-content']/main/div/div/div/div/div[2]/div/p/span", "xpath:idRelative"],
+        ["xpath=//p/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Program 300 högskolepoäng · 5 år · Psykologexamen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "665ebfba-8551-44be-863c-9067dbe6dae7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0d87dd43-5262-4619-82d0-ffd10fcd0fa9"]
+  }],
+  "urls": ["https://www.lu.se/"],
+  "plugins": []
+}
