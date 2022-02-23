@@ -1,0 +1,106 @@
+{
+  "id": "2ac867a9-f849-4f1c-9cd6-f028066edacc",
+  "version": "2.0",
+  "name": "LU",
+  "url": "https://www.lu.se",
+  "tests": [{
+    "id": "42fdfda5-20d5-4dc1-83c1-51ad6e219d0d",
+    "name": "telephone",
+    "commands": [{
+      "id": "8308b50c-ec76-42cd-81ff-12f52c50dbf6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b060f896-e02e-4f7b-b501-d8c9290eb772",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "703af4a6-69a5-4ce8-847a-028a9bf15411",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.card__block--content:nth-child(1) .card-block__title",
+      "targets": [
+        ["css=.card__block--content:nth-child(1) .card-block__title", "css:finder"],
+        ["xpath=//div[@id='block-lu-theme-content']/main/div[3]/div/div/div/div/a/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b187b1d-47f5-45be-95c6-c55b3d0488af",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.card__block--content:nth-child(1) .card-block__title",
+      "targets": [
+        ["css=.card__block--content:nth-child(1) .card-block__title", "css:finder"],
+        ["xpath=//div[@id='block-lu-theme-content']/main/div[3]/div/div/div/div/a/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0625030-c7cd-4558-a9be-cd73d3e9dd5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#dropdown-744e26de-cd4c-4638-8463-bfe728791ed0 > span",
+      "targets": [
+        ["css=#dropdown-744e26de-cd4c-4638-8463-bfe728791ed0 > span", "css:finder"],
+        ["xpath=//a[@id='dropdown-744e26de-cd4c-4638-8463-bfe728791ed0']/span", "xpath:idRelative"],
+        ["xpath=//nav/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Studera')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2c49288-a04f-48c6-8a6a-34743d02e3d5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Antagningspoäng",
+      "targets": [
+        ["linkText=Antagningspoäng", "linkText"],
+        ["css=.linklist--buttons > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Antagningspoäng')]", "xpath:link"],
+        ["xpath=//div[@id='block-lu-theme-content']/main/div[4]/div/div[2]/div/div/div/div/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/studera/anmalan-och-antagning/antagningspoang')])[2]", "xpath:href"],
+        ["xpath=//div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "392a6642-3fb2-4df7-a06e-d558a9bc8941",
+      "comment": "",
+      "command": "click",
+      "target": "css=.infobox-body p:nth-child(3)",
+      "targets": [
+        ["css=.infobox-body p:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='block-lu-theme-content']/div/div/main/div[2]/div/div/div/div[2]/div/div/div/div/div/div/div/p[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div/div/p[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8216acca-826c-42be-a588-4e2e99c4e674",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span:nth-child(4)",
+      "targets": [
+        ["css=span:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='block-lu-theme-content']/div/div/main/div[2]/div/div/div/div[2]/div/div/div/div/div/div/div/p[3]/span", "xpath:idRelative"],
+        ["xpath=//p[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Telefon: 046-222 93 00')]", "xpath:innerText"]
+      ],
+      "value": "Telefon: 046-222 93 00"
+    }]
+  }],
+  "suites": [{
+    "id": "2dca0a96-ca8d-4166-9dc7-2e73f44f115e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["42fdfda5-20d5-4dc1-83c1-51ad6e219d0d"]
+  }],
+  "urls": ["https://www.lu.se/"],
+  "plugins": []
+}
