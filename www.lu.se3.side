@@ -1,0 +1,94 @@
+{
+  "id": "7cea9d6a-b711-4fe0-ae5d-633660257b3d",
+  "version": "2.0",
+  "name": "https://www.lu.se/",
+  "url": "https://www.lu.se",
+  "tests": [{
+    "id": "96484bf9-9135-4835-9b42-6802d1184c5b",
+    "name": "Untitled",
+    "commands": [{
+      "id": "f228f7ee-99a1-456b-a6f7-e9b659c60464",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24d5fbce-3a70-4d24-b070-76657f7a00dd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "921x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a9f9477-b5f5-49f9-88a3-2eb5be0e87d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-100",
+      "targets": [
+        ["css=.mw-100", "css:finder"],
+        ["xpath=//img[@alt='Lunds universitets logotyp, länk till startsidan.']", "xpath:img"],
+        ["xpath=//div[@id='block-luheaderblock']/header/div[2]/div/div/div/div/div/h1/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54dc77c2-a209-447f-a49f-9bfd4f4404b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pb-3",
+      "targets": [
+        ["css=.pb-3", "css:finder"],
+        ["xpath=//div[@id='block-luheaderblock']/header/div[2]/div/div/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40dd8dbd-bf77-417b-8ccb-a7c5849b00b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-100",
+      "targets": [
+        ["css=.mw-100", "css:finder"],
+        ["xpath=//img[@alt='Lunds universitets logotyp, länk till startsidan.']", "xpath:img"],
+        ["xpath=//div[@id='block-luheaderblock']/header/div[2]/div/div/div/div/div/h1/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d601b857-bd28-4e2a-aac2-00ef27be23f2",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='block-lu-theme-content']/main/div[3]/div/div/div/div/a/div/div/div/div/p",
+      "targets": [
+        ["css=.card__block--content:nth-child(1) p", "css:finder"],
+        ["xpath=//div[@id='block-lu-theme-content']/main/div[3]/div/div/div/div/a/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//a/div/div/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Information för studenter, medarbetare och övriga.')]", "xpath:innerText"]
+      ],
+      "value": "Information för studenter, medarbetare och övriga."
+    }, {
+      "id": "1a551833-3a93-4c6c-9190-a624b03d8025",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//img[@alt='Lunds universitets logotyp, länk till startsidan.']",
+      "targets": [
+        ["css=.mw-100", "css:finder"],
+        ["xpath=//img[@alt='Lunds universitets logotyp, länk till startsidan.']", "xpath:img"],
+        ["xpath=//div[@id='block-luheaderblock']/header/div[2]/div/div/div/div/div/h1/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "26693b70-ac76-4fc6-a286-d73e2669e5f5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["96484bf9-9135-4835-9b42-6802d1184c5b"]
+  }],
+  "urls": ["https://www.lu.se/"],
+  "plugins": []
+}
